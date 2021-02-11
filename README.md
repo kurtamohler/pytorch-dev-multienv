@@ -1,2 +1,2 @@
 # pytorch-dev-multienv
-Manage multiple development environments for PyTorch
+Manage multiple environments for PyTorch contribution development
