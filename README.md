@@ -58,6 +58,8 @@ $ python setup.py develop
 
 Note: If you're using multiple different PyTorch clones, make sure to always
 activate the correct conda environment before building the associated clone.
+You will also have to activate the correct environment before trying to run any
+Python scripts using one of your PyTorch clones.
 
 ## Other tools
 
