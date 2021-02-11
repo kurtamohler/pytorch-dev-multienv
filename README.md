@@ -12,7 +12,7 @@ can use it.
 
 Add the following lines to your `~/.bashrc` script. Make sure to fill in your
 PyTorch fork URL and absolute path to pytorch-dev-multienv, everything between
-`[` and `]`.
+and including `[` and `]`.
 
 ```
 # Configure pytorch-dev-multienv
