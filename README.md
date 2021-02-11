@@ -39,20 +39,20 @@ $ create-pytorch-conda-env [new conda env name]
 $ clone-pytorch [new pytorch clone name]
 ```
 
-## Building PyTorch
+## Building and importing PyTorch
 
-Before building PyTorch, you must move into your clone and activate the
-associated conda environment. Note that `activate-pytorch` has automatic
-tab completion, which will list all the available conda envs.
+Before building PyTorch or before attempting to import it in Python, you must
+activate the associated conda environment.  Note that `activate-pytorch` has
+automatic tab completion, which will list all the available conda envs.
 
 ```
-$ cd [pytorch clone]
 $ activate-pytorch [pytorch conda env name]
 ```
 
 Now you can build as usual. For instance:
 
 ```
+$ cd [pytorch clone]
 $ python setup.py develop
 ```
 
