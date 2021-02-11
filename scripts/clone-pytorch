@@ -13,7 +13,7 @@ git clone $PYTORCH_FORK_URL $CLONE_NAME
 
 cd $CLONE_NAME
 
-git remote add upstream $PYTORCH_FORK_URL
+git remote add upstream git@github.com:pytorch/pytorch.git
 
 SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
