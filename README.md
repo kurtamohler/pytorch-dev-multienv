@@ -42,7 +42,8 @@ $ clone-pytorch [new pytorch clone name]
 ## Building PyTorch
 
 Before building PyTorch, you must move into your clone and activate the
-associated conda environment:
+associated conda environment. Note that `activate-pytorch` has automatic
+tab completion, which will list all the available conda envs.
 
 ```
 $ cd [pytorch clone]
