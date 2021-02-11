@@ -1,5 +1,6 @@
 # pytorch-dev-multienv
-Manage multiple environments for PyTorch contribution development
+Manage multiple environments for PyTorch contribution development. This tool
+allows you to work on multiple PyTorch repo clones simultaneously
 
 ## Prerequisites
 
@@ -7,6 +8,8 @@ pytorch-dev-multienv has only been tested on a Quansight qgpu machine with CUDA
 and other dependencies already installed. At the moment, it is not likely to
 work anywhere else. In the future, I plan to generalize the tool so more people
 can use it.
+
+This tool may or may not work with ccache, I am not sure yet.
 
 ## Installation
 
@@ -33,7 +36,6 @@ pytorch clone. I also recommend prefixing these names with `pytorch-`.
 
 ```
 $ create-pytorch-conda-env [new conda env name]
-$ activate-pytorch [new conda env name]
 $ clone-pytorch [new pytorch clone name]
 ```
 
@@ -76,3 +78,7 @@ repo clone afterwards, if you wish. This is useful if you want to repurpose a cl
 ```
 $ clean-pytorch
 ```
+
+## Credits
+
+This tool is heavily based on Pearu Peterson's script https://github.com/Quansight/pearu-sandbox/blob/master/working-envs/activate-pytorch-dev.sh
