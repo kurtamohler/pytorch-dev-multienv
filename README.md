@@ -57,7 +57,7 @@ $ python setup.py develop
 ```
 
 Note: If you're using multiple different PyTorch clones, make sure to always
-activate the correct associated conda environment.
+activate the correct conda environment before building the associated clone.
 
 ## Other tools
 
