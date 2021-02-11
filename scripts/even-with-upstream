@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -e
+
+LOCAL_CHANGES=$(git status --porcelain)
+
+if [ ! -z "$LOCAL_CHANGES" ]; then
+    echo "You have local changes, please commit or stash them"
+    exit 1
+fi
+
+git checkout master
+git fetch upstream
+git reset --hard upstream/master
+
+git submodule sync --recursive
+git submodule update --init --recursive
+
+git push origin master

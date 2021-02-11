@@ -1,0 +1,28 @@
+# Based on Pearu Peterson's conda env:
+# https://github.com/Quansight/pearu-sandbox/blob/master/conda-envs/pytorch-cuda-dev.yaml
+
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3
+  - numpy
+  - ninja
+  - pyyaml
+  - mkl
+  - mkl-include
+  - setuptools
+  - cmake
+  - cffi
+  - typing
+  - pytest
+  - compilers
+  - flake8
+  - psutil
+  - hypothesis
+  - nvcc_linux-64=11.0
+  - magma-cuda110
+  - mypy
+# to use a different CUDA version, say 10.2, run
+#   conda install -c conda-forge -c pytorch nvcc_linux-64=10.2 magma-cuda102

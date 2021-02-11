@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Cleans the current directory if it is a GitHub repo.
+# Also checks out main branch and evens its origin with upstream.
+
+set -e
+
+git clean -xddf
+git submodule foreach --recursive git clean -xddf
+git checkout master
+
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+$SCRIPTPATH/even-with-upstream
+

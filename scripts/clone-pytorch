@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ "$#" -ne "1" ]; then
+    echo "usage: $0 <clone name>"
+    exit 1
+fi
+
+set -e
+
+CLONE_NAME="$1"
+
+git clone $PYTORCH_FORK_URL $CLONE_NAME
+
+cd $CLONE_NAME
+
+git remote add upstream $PYTORCH_FORK_URL
+
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+
+$SCRIPTPATH/even-with-upstream

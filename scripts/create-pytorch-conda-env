@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+if [ "$#" -ne "1" ]; then
+    echo "usage: $0 {name of new env}"
+fi
+
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+
+conda env create --name $1 -f $SCRIPTPATH/../envs/pytorch-cuda-dev.yaml
