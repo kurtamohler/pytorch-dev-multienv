@@ -1,18 +1,6 @@
 #
 # Prepare pytorch development environment, detect CUDA availability
 #
-# Usage:
-#  source <this file.sh>
-#
-# Assumptions:
-#   Existence of /usr/local/cuda-10.1.243/env.sh
-#   Existence of ~/git/Quansight/pytorch
-#   Existence of pytorch-cuda-dev or pytorch-dev conda environment
-#
-# Author: Pearu Peterson
-# Created: November 2019
-# Updated: May 1 2020 for katex and USE_XNNPACK=1
-#
 
 if [ "$#" -ne "1" ]; then
   echo "usage: $0 <conda env name>"

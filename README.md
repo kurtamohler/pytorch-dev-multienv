@@ -87,4 +87,4 @@ $ clean-pytorch
 
 ## Credits
 
-This tool is heavily based on Pearu Peterson's script https://github.com/Quansight/pearu-sandbox/blob/master/working-envs/activate-pytorch-dev.sh
+This tool is heavily based on this script https://github.com/Quansight/pearu-sandbox/blob/master/working-envs/activate-pytorch-dev.sh

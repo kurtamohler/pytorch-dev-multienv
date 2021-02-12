@@ -1,6 +1,3 @@
-# Based on Pearu Peterson's conda env:
-# https://github.com/Quansight/pearu-sandbox/blob/master/conda-envs/pytorch-cuda-dev.yaml
-
 channels:
   - conda-forge
   - pytorch
