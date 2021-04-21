@@ -4,7 +4,7 @@
 
 if [ "$#" -ne "1" ]; then
   echo "usage: $0 <conda env name>"
-  exit 1
+  return 1
 fi
 
 
@@ -53,7 +53,7 @@ then
     else
         echo "conda environment does not exist. To create $USE_ENV, run:"
         echo "conda env create --file=~/git/Quansight/pearu-sandbox/conda-envs/pytorch-cuda-dev.yaml -n $USE_ENV"
-        exit 1
+        return 1
     fi
 
     # Don't set *FLAGS before activating the conda environment.
@@ -142,7 +142,7 @@ else
     else
         echo "conda environment does not exist. To create $USE_ENV, run:"
         echo "conda env create --file=~/git/Quansight/pearu-sandbox/conda-envs/pytorch-dev.yaml -n $USE_ENV"
-        exit 1
+        return 1
     fi
     # Don't set *FLAGS before activating the conda environment.
 
