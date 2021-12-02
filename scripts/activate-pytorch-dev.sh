@@ -36,10 +36,11 @@ then
     then
         echo "CUDA DISABLED"
     else
-        # when using cuda version different from 10.1, say 10.2, then run
-        #   conda install -c conda-forge nvcc_linux-64=10.2 magma-cuda102
-        #CUDA_VERSION=${CUDA_VERSION:-10.1.243}
-        CUDA_VERSION=${CUDA_VERSION:-11.0.3}
+        # when using cuda version different from 11.2, say 10.2, then run:
+        #   conda install -c conda-forge -c pytorch nvcc_linux-64=10.2 magma-cuda102
+        # and set CUDA_VERSION environment variable in ~/.bashrc:
+        #   export CUDA_VERSION=10.2.0
+        CUDA_VERSION=${CUDA_VERSION:-11.2.0}
         . /usr/local/cuda-${CUDA_VERSION}/env.sh
     fi
 
@@ -72,7 +73,7 @@ then
     #export NCCL_ROOT=${CUDA_HOME}
     #export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:${CUDA_HOME}/pkgconfig/
 
-    export USE_NCCL=0
+    export USE_NCCL=1
     # See https://github.com/NVIDIA/nccl/issues/244
     # https://github.com/pytorch/pytorch/issues/35363
     if [[ "" && ! -f third_party/nccl/nccl/issue244.patch ]]
