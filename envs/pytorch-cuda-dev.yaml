@@ -10,11 +10,11 @@ dependencies:
   - mkl
   - mkl-include
   - setuptools
-  - cmake
+  - cmake=3.21.3
   - cffi
   - typing
   - pytest
-  - compilers
+  - compilers=1.3.0
   - flake8
   - psutil
   - hypothesis
