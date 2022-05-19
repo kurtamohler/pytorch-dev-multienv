@@ -3,29 +3,30 @@ channels:
   - pytorch
   - defaults
 dependencies:
-  - python=3.9.7
-  - numpy
-  - ninja
-  - pyyaml
+  - cmake=3.21.3
+  - compilers=1.3.0
   - mkl
   - mkl-include
-  - setuptools
-  - cmake=3.21.3
-  - cffi
-  - typing
-  - pytest
-  - compilers=1.3.0
-  - flake8
-  - psutil
-  - hypothesis
-  - nvcc_linux-64=11.2
   - magma-cuda112
-  - mypy=0.812
-  - pip
-  - yarn
   - nodejs
-  - matplotlib
+  - nvcc_linux-64=11.2
+  - pip
+  - python=3.9.7
+  - setuptools
+  - yarn
   - pip:
+    - cffi
     - expecttest
+    - flake8
+    - hypothesis
+    - matplotlib
+    - mypy==0.812
+    - ninja
+    - numpy
+    - psutil
+    - pytest
+    - pyyaml
+    - typing
+
 # to use a different CUDA version, say 10.2, run
 #   conda install -c conda-forge -c pytorch nvcc_linux-64=10.2 magma-cuda102
