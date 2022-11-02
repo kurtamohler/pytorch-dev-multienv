@@ -40,7 +40,7 @@ then
         #   conda install -c conda-forge -c pytorch nvcc_linux-64=10.2 magma-cuda102
         # and set CUDA_VERSION environment variable in ~/.bashrc:
         #   export CUDA_VERSION=10.2.0
-        CUDA_VERSION=${CUDA_VERSION:-11.2.0}
+        CUDA_VERSION=${CUDA_VERSION:-11.7.0}
         . /usr/local/cuda-${CUDA_VERSION}/env.sh
     fi
 
