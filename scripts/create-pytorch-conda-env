@@ -7,4 +7,4 @@ fi
 
 SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
-conda env create --name $1 -f $SCRIPTPATH/../envs/pytorch-cuda-dev.yaml
+conda env create --name $1 -f $SCRIPTPATH/../envs/pytorch-cuda-11.7-dev.yaml

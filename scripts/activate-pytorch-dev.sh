@@ -40,7 +40,7 @@ then
         #   conda install -c conda-forge -c pytorch nvcc_linux-64=10.2 magma-cuda102
         # and set CUDA_VERSION environment variable in ~/.bashrc:
         #   export CUDA_VERSION=10.2.0
-        CUDA_VERSION=${CUDA_VERSION:-11.7.0}
+        CUDA_VERSION=${CUDA_VERSION:-11.7.1}
         . /usr/local/cuda-${CUDA_VERSION}/env.sh
     fi
 
@@ -53,7 +53,7 @@ then
         fi
     else
         echo "conda environment does not exist. To create $USE_ENV, run:"
-        echo "conda env create --file=~/git/Quansight/pearu-sandbox/conda-envs/pytorch-cuda-dev.yaml -n $USE_ENV"
+        echo "create-pytorch-conda-env $USE_ENV"
         return 1
     fi
 
