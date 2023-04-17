@@ -65,7 +65,7 @@ Python scripts using one of your PyTorch clones.
 
 ### even-with-upstream
 
-When you want to even your local and origin master branch with upstream/master,
+When you want to even your local and origin main branch with upstream/main,
 run the following while you're in your pytorch clone. This is useful when you
 need to rebase a branch.
 
@@ -75,7 +75,7 @@ $ even-with-upstream
 
 ### clean-pytorch
 
-If you want to completely clean and even your clone with upstream/master, run
+If you want to completely clean and even your clone with upstream/main, run
 the following while you're in your pytorch clone. Since this removes all local
 changes, you can rename the pytorch repo clone afterwards, if you wish. This is
 useful if you want to repurpose a clone, instead of deleting it and rerunning

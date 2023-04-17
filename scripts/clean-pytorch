@@ -7,7 +7,7 @@ set -e
 
 git clean -xddf
 git submodule foreach --recursive git clean -xddf
-git checkout master
+git checkout main
 
 SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 $SCRIPTPATH/even-with-upstream

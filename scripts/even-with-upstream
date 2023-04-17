@@ -9,11 +9,11 @@ if [ ! -z "$LOCAL_CHANGES" ]; then
     exit 1
 fi
 
-git checkout master
+git checkout main
 git fetch upstream
-git reset --hard upstream/master
+git reset --hard upstream/main
 
 git submodule sync --recursive
 git submodule update --init --recursive
 
-git push origin master
+git push origin main
