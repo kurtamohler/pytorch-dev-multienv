@@ -11,6 +11,10 @@ can use it.
 
 This tool may or may not work with ccache, I am not sure yet.
 
+If you want to try to use this on your own machine, try following these
+instructions to install CUDA:
+https://github.com/Quansight/dev-notes/blob/master/CUDA-installation-in-qgpu.md#installing-cuda-driver-and-toolkits-for-sudoers-only
+
 ## Installation
 
 Add the following lines to your `~/.bashrc` script. Make sure to fill in your
